@@ -1,0 +1,61 @@
+{
+  "trained_at": "2026-10-16 17:21",
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1"
+  },
+  "rows_raw": 32581,
+  "rows_clean": 32409,
+  "default_rate": 0.2187046807985436,
+  "threshold": 0.45529774993026334,
+  "threshold_beta": 1.0,
+  "cv_results": {
+    "Logistic Regression": {
+      "roc_auc": 0.8730499833437296,
+      "pr_auc": 0.7247413654267021
+    },
+    "XGBoost (default)": {
+      "roc_auc": 0.9405182591037177,
+      "pr_auc": 0.8945618107301774
+    }
+  },
+  "best_params": {
+    "colsample_bytree": 0.8497416192535173,
+    "gamma": 1.47816842918857,
+    "learning_rate": 0.041648277949081186,
+    "max_depth": 6,
+    "min_child_weight": 4,
+    "n_estimators": 435,
+    "subsample": 0.9533121035675474
+  },
+  "test": {
+    "roc_auc": 0.9498917383583222,
+    "pr_auc": 0.9073125205199628,
+    "accuracy": 0.9362850971922246,
+    "precision": 0.9396325459317585,
+    "recall": 0.7574047954866009,
+    "f1": 0.838734869191722,
+    "brier_uncalibrated": 0.06532204151153564,
+    "brier_calibrated": 0.05166439653864276,
+    "baseline_lr_roc_auc": 0.8740567840248485,
+    "baseline_lr_pr_auc": 0.713402473076496,
+    "confusion": {
+      "true_negative": 4995,
+      "false_positive": 69,
+      "false_negative": 344,
+      "true_positive": 1074
+    }
+  },
+  "global_importance_pp": {
+    "person_income": 14.52,
+    "loan_amnt": 10.1,
+    "loan_grade": 4.38,
+    "person_home_ownership": 3.84,
+    "loan_intent": 2.35,
+    "loan_int_rate": 1.86,
+    "person_emp_length": 1.49,
+    "person_age": 0.55,
+    "cb_person_cred_hist_length": 0.25,
+    "cb_person_default_on_file": 0.09
+  }
+}
